@@ -16,9 +16,7 @@ extern "C" {
                double Tstart[], double Tend[], // Times of start/end for each data set
                double Fmod[], double dFmod_star[], double dFmod_spot[], 
                double dFmod_inst[], double dFmoddt[], double deltaratio[]); // Outputs
-
 }
-//****************************************************************************80
 
 
 int main ( )
@@ -105,10 +103,6 @@ void testmacula()
   // Instrumental parameters
   Theta_inst[0]  = 1.0;  // U(1)
   Theta_inst[1]  = 1.0;  // B(1)
-
-  //cout << "  " << setw(14) << Fmod[0];
-
-  //maculatest(tt, &ndata, &Nspot);
 
   macula(t, &ndata, &Nspot, &mmax, &derivatives, &temporal, &TdeltaV, // Controls
               Theta_star, Theta_spot, Theta_inst,   // Star, Spot and Instrument parameters
