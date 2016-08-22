@@ -8,8 +8,8 @@ The file `caller.cpp` is a basic wrapper containing a port of the `maculacall.f9
 
 ### compilation
 
-gfortran -c macula.f90
-g++ -c caller.cpp -std=c++0x
-g++ -o caller caller.o macula.o -l gfortran -lstdc++
+    gfortran -c macula.f90
+    g++ -c caller.cpp -std=c++0x
+    g++ -o caller caller.o macula.o -l gfortran -lstdc++
 
 
